@@ -1,4 +1,4 @@
-# Edumind CUNY-SUNY AI Agent
+# CampusMind CUNY-SUNY AI Agent
 
 A modern, responsive web application featuring an AI-powered agent that helps students navigate the complex landscape of CUNY and SUNY institutions. Finding reliable information about professors, courses, and programs can be challenging and time-consuming - this solution makes this process seamless and intuitive.
 
