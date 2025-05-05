@@ -1,13 +1,27 @@
 # Edumind CUNY-SUNY AI Agent
 
-A modern, responsive web application featuring an AI-powered agent that allows students to search for professors at CUNY and SUNY institutions and get intelligent, contextual information about them.
+A modern, responsive web application featuring an AI-powered agent that helps students navigate the complex landscape of CUNY and SUNY institutions. Finding reliable information about professors, courses, and programs can be challenging and time-consuming - this solution makes this process seamless and intuitive.
+
+👉 **[Try the live application](https://edumind-cuny-suny-ai-agent.vercel.app/)**
+
+## 🎯 The Problem We're Solving
+
+Students in New York face several challenges when navigating the CUNY and SUNY systems:
+
+- **Scattered Information**: Details about professors and courses are spread across multiple platforms
+- **Outdated Data**: Official websites often contain outdated or incomplete professor information
+- **Time-Consuming Research**: Students waste hours trying to find reliable professor reviews and course details
+- **Decision Paralysis**: With so many options across 60+ campuses, students struggle to make informed decisions
+
+This AI-powered solution brings all this information together in one place, providing students with reliable, up-to-date information they can trust.
 
 ## 🚀 Features
 
-- **Professor Search**: Find information about professors using their first name, last name, and college/university
-- **AI-Powered Responses**: Get detailed, contextual information about professors
+- **Professor Search**: Find comprehensive information about professors using their first name, last name, and college/university
+- **AI-Powered Responses**: Get detailed, contextual information about teaching styles, course difficulty, and more
 - **Modern UI**: Clean, responsive interface built with React and Tailwind CSS
 - **User Consent Management**: Privacy-first approach with clear consent management
+- **Source Attribution**: All information comes with clearly marked sources so students know what to trust
 
 ## 🔧 Tech Stack
 
@@ -18,10 +32,17 @@ A modern, responsive web application featuring an AI-powered agent that allows s
   - Framer Motion for animations
   - React Router for navigation
   - Lucide icons
+  - React Markdown for rendering formatted responses
 
 - **Backend**: 
-  - The backend API is available at [GitHub Repository Link] 
-  - Built with [Technology Stack] 
+  - FastAPI for high-performance API endpoints
+  - Uvicorn as ASGI server
+  - LangChain for AI orchestration
+  - MongoDB for data storage
+  - Sentence Transformers and FAISS for semantic search
+  - Groq and Together AI for LLM integration
+  - Custom RAG system with DuckDuckGo Search integration
+  - PDF processing capabilities for academic resources
 
 ## 📦 Installation
 
@@ -82,14 +103,30 @@ src/
 └── main.tsx            # Application entry point
 ```
 
-## 🔄 API Integration
+## 🔄 How It Works
 
-The frontend connects to a backend API for retrieving professor information. The backend is responsible for:
+The system uses a multi-agent AI architecture to provide the most accurate and helpful information:
 
-1. Authenticating requests
-2. Searching for professors in the database
-3. Generating AI responses using collected data
-4. Returning structured responses with sources
+1. **User Query Processing**: Analyzes what you're asking to route to the right specialized agent
+2. **Data Retrieval**: Pulls information from multiple sources:
+   - Curated database of professor information
+   - Official school websites and resources
+   - Trusted third-party review platforms
+   - Real-time web search when needed
+3. **AI-Enhanced Responses**: Synthesizes this information into clear, helpful answers
+4. **Source Attribution**: Every piece of information includes its source so you can verify and trust what you're seeing
+
+## 🧠 Backend Architecture
+
+The backend is built with a focus on performance, scalability, and AI-first design, implementing:
+
+- **Multi-Agent System**: Specialized AI agents for different types of queries (professor info, transfer details, etc.)
+- **Retrieval Augmented Generation (RAG)**: For accurate, up-to-date information with reduced hallucinations
+- **Vector Database**: For semantic search across the knowledge base
+- **Memory Systems**: To maintain context in conversations
+- **Real-time Web Integration**: To supplement internal knowledge with the latest information
+
+The backend API is deployed on Hugging Face Spaces and the source code is available at [GitHub Repository](https://github.com/slfagrouche/Edumind-CUNY-SUNY-AI-Agent-API).
 
 ## 🚀 Deployment
 
@@ -112,22 +149,24 @@ This application can be deployed to various platforms:
    ```
 2. Deploy the contents of the `dist` directory to your web server
 
+## 📝 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
 ## 🤝 Contributing
 
+Contributions are welcome! Please feel free to submit a Pull Request.
+
 1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
 3. Commit your changes (`git commit -m 'Add some amazing feature'`)
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📄 License
+## 📬 Contact
 
-This project is licensed under the [LICENSE TYPE] - see the LICENSE file for details.
-
-## 📞 Contact
-
-Project Link: [GitHub Repository Link]
+Have questions or feedback? Reach out via:
+- GitHub Issues 
+- Email: SaidLfagrouche@gmail.com
 
 ---
-
-Built with ❤️ for CUNY and SUNY students by Edumind 

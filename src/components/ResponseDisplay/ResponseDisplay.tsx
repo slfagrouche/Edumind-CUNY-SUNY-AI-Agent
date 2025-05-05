@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 import SourcesDisplay from './SourcesDisplay';
 import { Message, AIResponse } from '../../utils/types';
 import { BookOpenCheck, Bot, HelpCircle } from 'lucide-react';
@@ -27,14 +29,6 @@ const ResponseDisplay: React.FC<ResponseDisplayProps> = ({ response }) => {
     
   const hasSources = hasKnowledgeBaseSources || hasWebSources || hasProfessorSources || hasSchoolSources;
   
-  // Convert newlines to <br> tags
-  const formattedContent = response.content.split('\n').map((text, index) => (
-    <React.Fragment key={index}>
-      {text}
-      {index < response.content.split('\n').length - 1 && <br />}
-    </React.Fragment>
-  ));
-  
   return (
     <div className="space-y-3">
       {response.agentType && (
@@ -44,7 +38,11 @@ const ResponseDisplay: React.FC<ResponseDisplayProps> = ({ response }) => {
         </div>
       )}
       
-      <div className="text-gray-800">{formattedContent}</div>
+      <div className="text-gray-800 markdown-content">
+        <ReactMarkdown remarkPlugins={[remarkGfm]}>
+          {response.content}
+        </ReactMarkdown>
+      </div>
       
       <div className="flex justify-between items-center pt-2 border-t border-gray-200">
         {hasSources ? (
