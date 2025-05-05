@@ -1,7 +1,7 @@
 # CampusMind CUNY-SUNY AI Agent
 
 A modern, responsive web application featuring an AI-powered agent that helps students navigate the complex landscape of CUNY and SUNY institutions. Finding reliable information about professors, courses, and programs can be challenging and time-consuming - this solution makes this process seamless and intuitive.
-Note: The backend API is deployed on Hugging Face Spaces and the source code is available at [CampusMind-Backend Repository.](https://github.com/slfagrouche/CampusMind-Backend)
+- Note: The backend API is deployed on Hugging Face Spaces and the source code is available at [CampusMind-Backend Repository.](https://github.com/slfagrouche/CampusMind-Backend)
 👉 **[Try the live application](https://edumind-cuny-suny-ai-agent.vercel.app/)**
 
 ## 🎯 The Problem We're Solving
