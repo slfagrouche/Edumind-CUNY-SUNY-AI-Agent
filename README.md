@@ -126,7 +126,7 @@ The backend is built with a focus on performance, scalability, and AI-first desi
 - **Memory Systems**: To maintain context in conversations
 - **Real-time Web Integration**: To supplement internal knowledge with the latest information
 
-The backend API is deployed on Hugging Face Spaces and the source code is available at [GitHub Repository](https://github.com/slfagrouche/Edumind-CUNY-SUNY-AI-Agent-API).
+The backend API is deployed on Hugging Face Spaces and the source code is available at [CampusMind-Backend Repository](https://github.com/slfagrouche/CampusMind-Backend).
 
 ## 🚀 Deployment
 
