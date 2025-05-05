@@ -55,8 +55,8 @@ This AI-powered solution brings all this information together in one place, prov
 
 1. Clone the repository
    ```bash
-   git clone https://github.com/your-username/edumind-cuny-suny-ai-agent.git
-   cd edumind-cuny-suny-ai-agent
+   https://github.com/slfagrouche/CampusMind-Frontend.git
+   cd CampusMind-Frontend
    ```
 
 2. Install dependencies
