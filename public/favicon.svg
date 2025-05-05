@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Background Circle -->
+  <circle cx="50" cy="50" r="48" fill="#5b21b6" />
+  
+  <!-- Graduation Cap -->
+  <path d="M20 45 L50 30 L80 45 L50 60 Z" fill="#f5f3ff" />
+  <path d="M70 48 L70 65 L50 75 L30 65 L30 48" stroke="#c4b5fd" stroke-width="1.5" fill="none" />
+  <rect x="47" y="60" width="6" height="15" fill="#c4b5fd" />
+  <circle cx="50" cy="75" r="4" fill="#8b5cf6" />
+  
+  <!-- Book -->
+  <path d="M35 40 L65 40 L65 55 L35 55 Z" fill="#ddd6fe" stroke="#7c3aed" stroke-width="1" opacity="0.7" />
+  
+  <!-- AI Circuit/Brain -->
+  <circle cx="50" cy="48" r="10" fill="none" stroke="#a78bfa" stroke-width="1.5" opacity="0.9" />
+  <path d="M45 44 L55 52" stroke="#a78bfa" stroke-width="1.5" />
+  <path d="M45 52 L55 44" stroke="#a78bfa" stroke-width="1.5" />
+  <circle cx="45" cy="44" r="2" fill="#7c3aed" />
+  <circle cx="55" cy="44" r="2" fill="#7c3aed" />
+  <circle cx="45" cy="52" r="2" fill="#7c3aed" />
+  <circle cx="55" cy="52" r="2" fill="#7c3aed" />
+</svg> 
