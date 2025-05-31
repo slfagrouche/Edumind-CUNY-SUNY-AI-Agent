@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Layout from './layouts/Layout';
+import AppLayout from './layouts/AppLayout';
 import Home from './pages/Home';
+import Chat from './pages/Chat';
 import ProfessorPage from './pages/ProfessorPage';
 import AboutPage from './pages/AboutPage';
 import ConsentDialog from './components/ConsentDialog';
@@ -36,8 +37,10 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Layout />}>
+        {/* Main Application Routes */}
+        <Route path="/" element={<AppLayout />}>
           <Route index element={<Home hasConsented={hasConsented} />} />
+          <Route path="chat" element={<Chat />} />
           <Route path="professor" element={<ProfessorPage hasConsented={hasConsented} />} />
           <Route path="about" element={<AboutPage />} />
         </Route>

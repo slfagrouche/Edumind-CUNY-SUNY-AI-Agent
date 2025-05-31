@@ -1,26 +1,22 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import ProfessorSearch from '../components/ProfessorSearch';
+import ChatInterface from '../components/ChatInterface';
 
-interface ProfessorPageProps {
-  hasConsented: boolean | null;
-}
-
-const ProfessorPage: React.FC<ProfessorPageProps> = ({ hasConsented }) => {
+const Chat: React.FC = () => {
   return (
     <div className="min-h-screen bg-black text-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        {/* Search Interface */}
+        {/* Chat Interface */}
         <motion.div 
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <ProfessorSearch hasConsented={hasConsented} />
+          <ChatInterface />
         </motion.div>
       </div>
     </div>
   );
 };
 
-export default ProfessorPage;
+export default Chat; 

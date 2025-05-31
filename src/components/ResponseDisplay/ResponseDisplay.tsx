@@ -32,23 +32,23 @@ const ResponseDisplay: React.FC<ResponseDisplayProps> = ({ response }) => {
   return (
     <div className="space-y-3">
       {response.agentType && (
-        <div className="flex items-center text-sm text-indigo-700 bg-indigo-50 px-3 py-1 rounded-t-md border-b border-indigo-100">
+        <div className="flex items-center text-sm text-indigo-400 bg-gray-800/50 px-3 py-1 rounded-t-md border-b border-gray-600">
           <Bot className="h-4 w-4 mr-2" />
           <span className="font-medium">Response from: {getAgentTypeDisplay(response.agentType)}</span>
         </div>
       )}
       
-      <div className="text-gray-800 markdown-content">
+      <div className="text-gray-200 markdown-content">
         <ReactMarkdown remarkPlugins={[remarkGfm]}>
           {response.content}
         </ReactMarkdown>
       </div>
       
-      <div className="flex justify-between items-center pt-2 border-t border-gray-200">
+      <div className="flex justify-between items-center pt-2 border-t border-gray-600">
         {hasSources ? (
           <button
             onClick={() => setShowSources(!showSources)}
-            className="flex items-center text-sm text-blue-600 hover:text-blue-800 transition-colors duration-200"
+            className="flex items-center text-sm text-indigo-400 hover:text-indigo-300 transition-colors duration-200"
           >
             <BookOpenCheck className="h-4 w-4 mr-1" />
             {showSources ? 'Hide sources' : 'View sources'}
