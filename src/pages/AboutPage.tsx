@@ -36,7 +36,7 @@ const AboutPage: React.FC = () => {
               academic guidance, and essential resources to make informed decisions about your education.
             </p>
           </div>
-
+          
           {/* Stats */}
           <div className="grid md:grid-cols-3 gap-8 mb-16">
             <div className="text-center">
@@ -186,7 +186,7 @@ const AboutPage: React.FC = () => {
             </a>
           </div>
         </motion.div>
-      </div>
+        </div>
     </div>
   );
 };
